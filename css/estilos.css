@@ -1,5 +1,10 @@
 /*Variáveis*/
 /*Mixins*/
+.image-replacement {
+  text-indent: -9999px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
 .sombra-padrao {
   box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.8);
 }
@@ -45,6 +50,9 @@ header .container {
 }
 .menu-opcoes ul {
   padding-left: 0;
+}
+.menu-opcoes a:hover {
+  text-decoration: underline;
 }
 .menu-opcoes li {
   display: inline-block;
