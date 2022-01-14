@@ -87,6 +87,9 @@ header .container {
 .destaque button:hover {
   background: #c8615e;
 }
+.destaque button:active {
+  background: #b6413e;
+}
 /** Sobre **/
 .sobre {
   background: #ebebeb;
