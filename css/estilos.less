@@ -1,7 +1,6 @@
 @cor-padrao: #c24e4b;
 @cor-auxiliar: #1e2c35;
 @cor-branca: #fff;
-
 /** Geral **/
 body {
   font-family: "Roboto Slab", serif;
@@ -32,7 +31,7 @@ h2 {
 /** Header **/
 header {
   border-top: 5px solid @cor-padrao ;
-  background: rgba(30, 44, 53, 0.8);
+  background: fade(@cor-auxiliar, 80);
   height: 90px;
   width: 100%;
   position: absolute;
@@ -105,7 +104,10 @@ header .container {
   font-weight: bold;
 }
 
+.destaque button:hover {
+  background: lighten(@cor-padrao, 5);
 
+}
 /** Sobre **/
 .sobre {
   background: #ebebeb;
@@ -163,11 +165,11 @@ header .container {
 
 /** Planos **/
 .planos {
-  background: #1e2c35;
+  background: @cor-auxiliar;
 }
 
 .planos h2 {
-  color: @cor-branca;
+  color: @cor-padrao;
 }
 
 .plano {
@@ -183,7 +185,7 @@ header .container {
 }
 
 .plano h3 {
-  color: @cor-branca;
+  color: #fff;
   font-size: 1.8em;
   background: @cor-padrao;
   text-align: center;
@@ -221,7 +223,7 @@ header .container {
 .plano button {
   background: @cor-padrao;
   border: 0;
-  color: @cor-branca;
+  color: #fff;
   width: 210px;
   height: 38px;
   font-size: 1.2em;
@@ -319,7 +321,7 @@ textarea {
   margin: 0 auto;
   background: @cor-padrao;
   border: 0;
-  color: @cor-branca;
+  color: #fff;
   width: 210px;
   height: 38px;
   font-size: 1.2em;
@@ -348,7 +350,7 @@ footer::after {
 
 footer::before {
   content: "";
-  background: #1e2c35;
+  background: @cor-auxiliar;
   top: 0;
   left: 0;
   bottom: 0;
@@ -393,7 +395,7 @@ footer .container img {
 }
 
 footer a {
-  color: @cor-branca;
+  color: #fff;
   text-decoration: none;
 }
 
